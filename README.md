@@ -1,5 +1,2 @@
 # clubvitalcan
-.sass-cache/
-*.css.map
-*.sass.map
-*.scss.map
+proyecto club Vitalcan – Alimento para perros y gatos. Nutrición indicada para mascotas.

@@ -6,16 +6,14 @@
 		<meta name="description">
 		<meta name="author" content="RDI2K">
 		<meta name="generator" content="Visual Code">
-		<title>
-	Vitalcan – Alimento para perros y gatos. Nutrición indicada para mascotas.
-</title>
+		<title>Vitalcan – Alimento para perros y gatos. Nutrición indicada para mascotas.</title>
 
     <link href="https://mazamadre.com/vitalcan/assets/img/favicon.jpg" rel="shortcut icon" type="image/vnd.microsoft.icon">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <!----link rel="manifest" href="/manifest.json" crossorigin="anonymous">-->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet" crossorigin="anonymous">
-    <link href="https://mazamadre.com/vitalcan/assets/css/vitalcan.css" rel="stylesheet" crossorigin="anonymous">
+    <link href="https://mazamadre.com/vitalcan/assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://mazamadre.com/vitalcan/assets/css/vitalcan.css" rel="stylesheet">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-json/2.6.0/jquery.json.min.js" crossorigin="anonymous"></script>
 
 </head>
@@ -27,9 +25,9 @@
 <input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="">
 <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="">
 </div>
-<!----
-<script type="text/javascript">
 
+<script type="text/javascript">
+//<![CDATA[
 var theForm = document.forms['form1'];
 if (!theForm) {
     theForm = document.form1;
@@ -41,8 +39,8 @@ function __doPostBack(eventTarget, eventArgument) {
         theForm.submit();
     }
 }
-
-</script>-->
+//]]>
+</script>
 
 
 
@@ -90,37 +88,45 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'form1', ['t
 </div>
 			<nav class="d-flex justify-content-end vitalcan-violeta-oscuro sticky-top ">
 				<ul id="acceso-a-veterinarios" class="mb-0 mx-2">
-					<li class="">
+					<li>
 						<button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
 							Acceso a veterinarios 
 										<i class="fa fa-sign-in" aria-hidden="true"></i></button>
+							
+						
 					</li>
 				</ul>			</nav>
             <nav class="navbar shadow sticky-top navbar-light vitalcan-azul-bg">
                 <div class="container-fluid">
-                    <a class="navbar-brand ocultar_responsivo " href="#">
-					  <img src="https://www.trabajo.gba.gov.ar/CDN/assets/img/logos/clubVitalCanLogo.png" class="brand-logo" alt="Vitalcan">
-					</a>
+                    
+
+                  <a class="navbar-brand ocultar_responsivo " href="#">
+                      <img src="https://www.mazamadre.com/vitalcan/assets/img/logos/clubVitalCanLogo.png" class="brand-logo" alt="Vitalcan">
+                    </a>
+                    <a class="logo_responsivo" href="#">
+                        <img src="https://www.mazamadre.com/vitalcan/assets/img/logos/clubVitalCanLogo_minimo.png" class="logo_responsivo" alt="Vitalcan">
+                      </a>
                   <div class="d-flex justify-content-end w-auto me-md-2 px-2 form-login">
                         
-					<div class="row" id="login_club">
+					<div class="row" id="login_club_responsivo">
 						<div class="input-group">
 							<input type="text" name="ctl00$txtUsuario" id="txtUsuario" class="form-control" placeholder="Usuario" aria-label="Recipient's username" aria-describedby="button-addon2">
 							<input name="ctl00$txtPassword" id="txtPassword" class="form-control rounded-0" type="password" placeholder="Contraseña">
-							<button class="btn btn-outline-secondary" name="ctl00$btnLogin" type="button" id="button-addon2">INGRESAR</button>
+							<button class="btn btn-outline-secondary ocultar_responsivo" name="ctl00$btnLogin" type="button" id="button-addon2">INGRESAR</button>
+							<button class="btn btn-outline-secondary logo_responsivo" name="ctl00$btnLogin" type="button" id="button-addon2"><i class="fa fa-sign-in" aria-hidden="true"></i></button>                            
 							<div class="col-12 text-end mt-1"><a href="javascript:void(0);">Olvidé mi contraseña</a></div>
 						  </div>					
 					</div>               
 
 				</div>
                   
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                  <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
                   
                 </div>
 				
-              </nav><div class="collapse navbar-collapse vitalcan-violeta" id="navbarTogglerDemo02">
+              </nav><div class="navbar-collapse vitalcan-violeta collapse" id="navbarTogglerDemo02" style="">
 				<ul class="navbar-nav me-auto px-5 text-center ">
 				  <li class="nav-item">
 					<a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -153,7 +159,7 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'form1', ['t
 	   <!-- Single item -->
 	   <div class="carousel-item active" data-bs-interval="30000">
 		 <video playsinline="" autoplay="" muted="" loop="">
-		   <source class="h-100" src="https://www.trabajo.gba.gov.ar/CDN/assets/img/mascotas/perro-video.mp4" type="video/mp4">
+		   <source class="h-100" src="https://www.mazamadre.com/vitalcan/assets/img/mascotas/perro-video.mp4" type="video/mp4">
 		 </video>
 		 <div class="mask">
 		   <div class="d-flex justify-content-center align-items-center h-100">
@@ -170,7 +176,7 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'form1', ['t
  
 	   <!-- Single item -->
 	   <div class="carousel-item" data-bs-interval="10000">
-		<img class="img-fluid" src="https://www.trabajo.gba.gov.ar/CDN/assets/img/mascotas/gato.jpg" alt="Vitalcan">
+		<img class="img-fluid" src="https://www.mazamadre.com/vitalcan/assets/img/mascotas/gato.jpg" alt="Vitalcan">
 		 <div class="mask">
 		   <div class="d-flex justify-content-center align-items-center h-100">
 			 <div class="text-white text-center txt_slider">
@@ -200,7 +206,7 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'form1', ['t
 					<div class="Aligner" style="margin-top: -4em;z-index: 20;">
 						<div class="Aligner-item Aligner-item--top">
 					  	<div class="mx-0 mx-lg-4 my-4 my-lg-0 p-4 shadow text-center">
-		   				<div id="ContentBox_updRegistro" class="">
+		   				<div id="ContentBox_updRegistro">
 			   
 						   <fieldset class="form-registro">
 							   <h2 class="vitalcan-azul text-start">Sumate al Club Vitalcan</h2>
@@ -328,7 +334,7 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'form1', ['t
 						 </fieldset>
        <div class="w-100 mt-4 text-end botonera">								   
 								   <input type="submit" name="" onclick="window.location.href='registro-paso2.html'" value="Siguiente" id="" class="btn">
-								   <img src="https://www.trabajo.gba.gov.ar/CDN/assets/img/loading.gif" style="display:none;">
+								   <img src="https://www.mazamadre.com/vitalcan/assets/img/loading.gif" style="display:none;">
 							   </div></div>
 						   
 						</div>
@@ -357,7 +363,7 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'form1', ['t
 			<div class="col-md-2"><i class="fa fa-paw fs-2 vitalcan-azul" aria-hidden="true"></i><p>Tips de cuidado para tu mascota.</p></div>
 			<div class="col-md-2"><i class="fa fa-gift fs-2 vitalcan-azul" aria-hidden="true"></i><p>Sorpresas y beneficios exclusivos.</p></div>
 			<div class="col-md-2"><i class="fa fa-graduation-cap fs-2 vitalcan-azul" aria-hidden="true"></i><p>Secretos de expertos en comportamiento.</p></div>
-			<div class="col-md-2"><img src="https://www.trabajo.gba.gov.ar/CDN/assets/img/iconos/alimento-perro.svg" class="alimento-perro"><p>Recomendaciones nutricionales para tu mascota.</p></div>
+			<div class="col-md-2"><img src="https://www.mazamadre.com/vitalcan/assets/img/iconos/alimento-perro.svg" class="alimento-perro"><p>Recomendaciones nutricionales para tu mascota.</p></div>
 			<div class="col-md-2"></div>
     
 </div>
@@ -369,7 +375,7 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'form1', ['t
 
         </main>
 
-        <!--<script src="https://www.trabajo.gba.gov.ar/CDN/assets/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <!--<script src="https://www.mazamadre.com/vitalcan/assets/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
         <script src="https://code.highcharts.com/highcharts.src.js" crossorigin="anonymous"></script>
 
         <script type="text/javascript">
@@ -450,7 +456,7 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'form1', ['t
 	<footer class="container-fluid footer">
 		<div class="row px-2 ">
 			<div class="col-md-2"><a class="navbar-brand" href="javascript:void(0);">
-				<img src="https://www.trabajo.gba.gov.ar/CDN/assets/img/logos/vitalcan_blanco.png" class="brand" alt="Vitalcan">							
+				<img src="https://www.mazamadre.com/vitalcan/assets/img/logos/vitalcan_blanco.png" class="brand" alt="Vitalcan">							
 			</a></div>
 			<div class="col-md-10 footer_links">
 				
